@@ -15,3 +15,13 @@ Admin - delete company_job_posting
         delete candidate_profile
         block company
         block candidate
+
+
+
+
+QEYD:
+
+1. Using Security.
+2. All profiles shoul be accepted by admin.
+3. Even admin should cant see the passwords.
+
