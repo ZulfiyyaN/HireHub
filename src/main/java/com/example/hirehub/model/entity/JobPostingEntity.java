@@ -23,8 +23,9 @@ public class JobPostingEntity {
     String expLevel;      //Experience Level
     String skills;     //Skills & Qualifications
     String location;
-    String empType;     //Full-time & Part-time
+  //  String empType;     //Full-time & Part-time - in the info file
     Double salary;
+    String position; // enum
     @Email
     String email;    // contact information
     //  @Pattern(regexp = "^(?:\\+994|0)(?:50|51|55|70|77|99|10|60)\\s?\\d{3}\\s?\\d{2}\\s?\\d{2}$",

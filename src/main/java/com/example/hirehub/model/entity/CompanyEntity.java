@@ -9,6 +9,7 @@ import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.experimental.FieldDefaults;
+
 import java.time.LocalDateTime;
 
 @Entity
@@ -29,7 +30,7 @@ public class CompanyEntity {
     @NotBlank(message = "Email info is important")
     @Column(unique = true, nullable = false)
     String email;
-    String password;
+  //  String password;
 
     @Enumerated(EnumType.STRING)
     CompanyStatus status = CompanyStatus.PENDING; //by default
@@ -39,7 +40,7 @@ public class CompanyEntity {
 
 
     @OneToOne(mappedBy = "company", cascade = CascadeType.ALL)
-    CompanyInfoEntity info;
+    private CompanyInfoEntity info;
 
 
 }

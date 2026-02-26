@@ -1,9 +1,11 @@
 package com.example.hirehub.model.entity;
+
 import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.experimental.FieldDefaults;
+
 import java.time.LocalDateTime;
 
 @Entity
@@ -30,9 +32,8 @@ public class CompanyInfoEntity {
 
 
     @OneToOne
-    @MapsId
-    @JoinColumn (name ="company_id")
-    CompanyEntity company;
+    @JoinColumn(name = "company_id")
+    private CompanyEntity company;
 
 
 }
