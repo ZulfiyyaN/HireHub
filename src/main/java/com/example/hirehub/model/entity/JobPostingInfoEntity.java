@@ -1,10 +1,10 @@
 package com.example.hirehub.model.entity;
 
 import com.example.hirehub.model.enumeration.JobPostingStatus;
+import com.example.hirehub.model.enumeration.WorkPlace;
+import com.example.hirehub.model.enumeration.WorkType;
 import jakarta.persistence.*;
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotEmpty;
-import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.*;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.Setter;
@@ -17,8 +17,7 @@ import java.time.LocalDateTime;
 @Getter
 @Setter
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class JobPostingEntity {
-
+public class JobPostingInfoEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Integer id;
@@ -36,15 +35,33 @@ public class JobPostingEntity {
     @NotEmpty(message = "Job title can be empty!")
     String jobTitle;
 
+    String eduReq;      //Education Requirements
+    String expLevel;      //Experience Level
+    String skills;     //Skills & Qualifications
+    String location;
+
+    @Enumerated(EnumType.STRING)
+    WorkType workType;   //Full-time, Part-time etc.
+
+    @Enumerated(EnumType.STRING)
+    WorkPlace workPlace;  //Remote, On-Site or Hybrid
+
+    Double salary;
+    String position;
+
+    @Email
+    String email;
+
     @Column(name = "created_at", updatable = false)
     LocalDateTime createdAtProfile = LocalDateTime.now();
 
     LocalDateTime expiredDate;
 
 
-    @OneToOne(mappedBy = "jobPostingEntity", cascade = CascadeType.ALL)
-    private JobPostingInfoEntity jobPostingInfoEntity;
 
 
+    @OneToOne
+    @JoinColumn(name = "jobPosting_id")
+    private JobPostingEntity jobPostingEntity;
 
 }

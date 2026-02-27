@@ -40,7 +40,7 @@ public class CompanyEntity {
 
 
     @OneToOne(mappedBy = "company", cascade = CascadeType.ALL)
-    private CompanyInfoEntity info;
+    private CompanyInfoEntity companyInfo;
 
 
 }

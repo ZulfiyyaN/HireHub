@@ -23,6 +23,7 @@ public class CandidateInfoEntity {
     @Past(message = "Date of birth should be past")
     @NotBlank(message = "Info is required")
     Integer dateOfBirth;
+
     Gender gender;
 
 
@@ -30,6 +31,10 @@ public class CandidateInfoEntity {
     String workExperience;
     String knowledge;
     String certificate;
+
+    @OneToOne
+    @JoinColumn(name = "candidate_id")
+    private CandidateEntity candidate;
 
 
 }
