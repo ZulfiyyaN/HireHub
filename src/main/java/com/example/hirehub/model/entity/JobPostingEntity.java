@@ -21,7 +21,7 @@ public class JobPostingEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Integer id;
+    Long id;
 
     @Enumerated(EnumType.STRING)
     JobPostingStatus jobPostingStatus;

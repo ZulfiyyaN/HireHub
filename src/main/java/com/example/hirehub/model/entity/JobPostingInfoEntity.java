@@ -20,7 +20,7 @@ import java.time.LocalDateTime;
 public class JobPostingInfoEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Integer id;
+    Long id;
 
     @Enumerated(EnumType.STRING)
     JobPostingStatus jobPostingStatus;

@@ -1,0 +1,19 @@
+spring:
+    application:
+        name: HireHub
+
+    datasource:
+        url: jdbc:postgresql://localhost:5433/hirehub
+        username: postgres
+        password: 1234
+
+    jpa:
+        hibernate:
+            ddl-auto: update
+
+    show-sql: true
+
+server:
+ port: 8080
+
+

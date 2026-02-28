@@ -18,7 +18,7 @@ public class CandidateInfoEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Integer id;
+    Long id;
 
     @Past(message = "Date of birth should be past")
     @NotBlank(message = "Info is required")

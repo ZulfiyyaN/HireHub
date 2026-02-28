@@ -16,7 +16,7 @@ import java.time.LocalDateTime;
 public class CompanyInfoEntity {
     @Id
     @Column(name = "company_id")
-    Integer id;
+    Long id;
 
     @Column(unique = true)
     String website;

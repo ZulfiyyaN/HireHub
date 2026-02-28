@@ -11,7 +11,7 @@ import java.time.LocalDateTime;
 public class CompanyDto {
 
 
-    Integer id;
+    Long id;
     String name;
     String email;
     LocalDateTime createdAt;

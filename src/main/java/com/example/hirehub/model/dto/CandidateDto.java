@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 @Setter
 public class CandidateDto {
 
-    Integer id;
+    Long id;
     String name;
     String surname;
     String email;

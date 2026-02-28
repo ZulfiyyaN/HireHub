@@ -20,7 +20,7 @@ import java.time.LocalDateTime;
 public class CompanyEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Integer id;
+    Long id;
 
     @NotBlank(message = "Name can not be blank")
     @NotNull

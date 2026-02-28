@@ -1,0 +1,35 @@
+[33mcommit 68778c31d2844b8ad81e04fae7c72bc9692e9ef8[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m
+Author: Zulfiyya Naghiyeva <naghiyevazulfiyya@gmail.com>
+Date:   Sat Feb 28 13:24:24 2026 +0400
+
+    Changing id type frim Integer, to Long, and Creating, CompanyService, CompanyServiceImpl, CompanyRepository
+
+[33mcommit 885436a712bc07160b8898f5e4e9af33968768e5[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Zulfiyya Naghiyeva <naghiyevazulfiyya@gmail.com>
+Date:   Sat Feb 28 00:39:15 2026 +0400
+
+    JobPostingEntity, JobPostingInfoEntity and enums
+
+[33mcommit 8cd5fab9c6839b771c3163d01f11b1a1c48256d1[m
+Author: Zulfiyya Naghiyeva <naghiyevazulfiyya@gmail.com>
+Date:   Fri Feb 27 00:31:22 2026 +0400
+
+    Fixing CandidateEntity, CandidateInfoEntity, Enums
+
+[33mcommit 1bcf6f1a942ed1ca519092cc93916783d2e706d7[m
+Author: Zulfiyya Naghiyeva <naghiyevazulfiyya@gmail.com>
+Date:   Tue Feb 24 01:02:49 2026 +0400
+
+    Modified CompanyEntity, CompanyInfoEntity and CompanyDto classes
+
+[33mcommit 1849c542164134c0466304dcebe8b4a1ce845194[m
+Author: Zulfiyya Naghiyeva <naghiyevazulfiyya@gmail.com>
+Date:   Sun Feb 22 01:57:39 2026 +0400
+
+    Initial commit
+
+[33mcommit 79dc44da367251f57d66aeb560e79f975ef65b77[m
+Author: Zulfiyya Naghiyeva <naghiyevazulfiyya@gmail.com>
+Date:   Sun Feb 22 01:51:59 2026 +0400
+
+    Initial commit
