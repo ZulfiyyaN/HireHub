@@ -28,7 +28,7 @@ public class CompanyEntity {
 
     @Email(message = "Email format is not correct ")
     @NotBlank(message = "Email info is important")
-    @Column(unique = true, nullable = false)
+    @Column(nullable = false, unique = true)
     String email;
   //  String password;
 

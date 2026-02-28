@@ -15,10 +15,11 @@ import java.time.LocalDateTime;
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class CompanyInfoEntity {
     @Id
-    @Column(name = "company_id")
+    @Column
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
 
-    @Column(unique = true)
+    @Column(nullable = false, unique = true)
     String website;
 
     @Column(columnDefinition = "TEXT")

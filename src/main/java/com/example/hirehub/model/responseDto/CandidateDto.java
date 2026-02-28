@@ -1,4 +1,4 @@
-package com.example.hirehub.model.dto;
+package com.example.hirehub.model.responseDto;
 
 import lombok.Getter;
 import lombok.Setter;
